@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Forge — Automation & Dev Services</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#0a0a0f;color:#fff;overflow-x:hidden}
+.hero{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 20px;background:radial-gradient(ellipse at top,#1a0a00,#0a0a0f 70%)}
+.hero h1{font-size:clamp(2.5rem,8vw,5rem);font-weight:900;line-height:1.1;margin-bottom:20px}
+.gradient{background:linear-gradient(135deg,#ff6600,#ff8844,#ffaa66);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
+.hero p{font-size:clamp(1rem,2.5vw,1.3rem);color:#999;max-width:600px;margin-bottom:30px;line-height:1.6}
+.badge{display:inline-block;padding:6px 16px;background:rgba(255,102,0,0.1);border:1px solid rgba(255,102,0,0.3);border-radius:100px;color:#ff8844;font-size:14px;margin-bottom:20px}
+.btn-primary{display:inline-block;padding:16px 40px;background:linear-gradient(135deg,#ff6600,#e65c00);color:#fff;border:none;border-radius:12px;font-size:18px;font-weight:700;text-decoration:none;margin:5px;transition:all 0.3s}
+.btn-primary:hover{transform:translateY(-2px);box-shadow:0 10px 40px rgba(255,102,0,0.3)}
+.btn-outline{display:inline-block;padding:16px 40px;background:transparent;color:#fff;border:1px solid #333;border-radius:12px;font-size:18px;font-weight:600;text-decoration:none;margin:5px}
+.btn-outline:hover{border-color:#ff6600;color:#ff6600}
+section{padding:80px 20px;max-width:1100px;margin:0 auto}
+.section-title{font-size:clamp(1.5rem,4vw,2.2rem);font-weight:800;margin-bottom:12px;text-align:center}
+.section-sub{color:#888;text-align:center;margin-bottom:50px;font-size:16px}
+.grid-3{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:20px}
+.card{background:linear-gradient(145deg,#13131a,#1a1a24);border:1px solid #2a2a3a;border-radius:20px;padding:30px;position:relative}
+.card:hover{border-color:#ff6600;transform:translateY(-4px);box-shadow:0 20px 60px rgba(255,102,0,0.1)}
+.card-icon{font-size:2.5rem;margin-bottom:15px}
+.card h3{font-size:20px;font-weight:700;margin-bottom:8px}
+.card p{color:#888;font-size:14px;line-height:1.6}
+.card .price{font-size:32px;font-weight:800;color:#ff6600;margin:10px 0}
+.popular{border-color:#ff6600;border-width:2px}
+.popular-tag{position:absolute;top:-12px;right:20px;background:#ff6600;color:#fff;font-size:12px;font-weight:700;padding:4px 14px;border-radius:100px}
+.card ul{list-style:none;margin:15px 0;color:#aaa;font-size:13px;line-height:2}
+.card ul li::before{content:"2713 ";color:#ff6600;font-weight:700}
+.buy-btn{display:block;text-align:center;padding:14px;background:linear-gradient(135deg,#ff6600,#e65c00);color:#fff;border-radius:10px;font-weight:700;font-size:15px;text-decoration:none;margin-top:15px}
+.other-services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-top:30px}
+.other-card{background:rgba(255,255,255,0.03);border:1px solid #2a2a3a;border-radius:14px;padding:24px;text-align:center;text-decoration:none;color:#fff}
+.other-card:hover{border-color:#ff6600}
+.other-card .icon{font-size:2rem;margin-bottom:10px}
+.other-card h4{font-weight:700;margin-bottom:5px}
+.other-card p{color:#888;font-size:13px}
+.other-card .amount{color:#ff6600;font-weight:700;font-size:20px;margin-top:8px}
+.payment-bar{background:#13131a;border:1px solid #2a2a3a;border-radius:20px;padding:30px;margin-top:40px}
+.payment-bar h3{text-align:center;margin-bottom:20px;font-size:18px;color:#888}
+.payment-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:12px}
+.pay-method{background:rgba(255,255,255,0.03);border-radius:10px;padding:14px;text-align:center;font-size:13px}
+.pay-method b{display:block;margin-bottom:4px;color:#fff}
+.pay-method span{color:#888}
+footer{padding:40px 20px;text-align:center;color:#444;font-size:13px;border-top:1px solid #1a1a24;margin-top:40px}
+footer a{color:#ff6600;text-decoration:none}
+</style></head>
+<body>
+<section class="hero">
+  <span class="badge">🔥 Guatemala — Remote — Est. 2026</span>
+  <h1>Build. Automate.<br><span class="gradient">Scale.</span></h1>
+  <p>I create automation workflows, monitor servers, build websites, and solve technical problems. No fluff. Results delivered.</p>
+  <div>
+    <a href="#packs" class="btn-primary">See Services ↓</a>
+    <a href="https://www.paypal.com/donate/?hosted_button_id=WL7F42PXFDAZN" class="btn-outline">☕ Buy me a coffee</a>
+  </div>
+</section>
+
+<section id="packs">
+  <h2 class="section-title">📦 n8n Workflow Packs</h2>
+  <p class="section-sub">Ready-to-import. Save hours.</p>
+  <div class="grid-3">
+    <div class="card">
+      <div class="card-icon">🚀</div><h3>Starter</h3><p>Webhooks, cron, email, forms.</p>
+      <div class="price">$25</div>
+      <ul><li>68 workflows</li><li>Webhook + Cron + Email</li><li>JSON format + docs</li></ul>
+      <a href="https://www.paypal.com/ncp/payment/HVG6GH35MPUV2" class="buy-btn">Buy Now</a>
+    </div>
+    <div class="card popular">
+      <div class="popular-tag">POPULAR</div>
+      <div class="card-icon">🔥</div><h3>Pro</h3><p>HTTP, code, databases, error handling.</p>
+      <div class="price">$50</div>
+      <ul><li>422 workflows</li><li>HTTP + Code + Filter + DB</li><li>Error handling + ExecuteCommand</li></ul>
+      <a href="https://www.paypal.com/ncp/payment/JD7BMS7GMU8GL" class="buy-btn">Buy Now</a>
+    </div>
+    <div class="card">
+      <div class="card-icon">⚡</div><h3>Enterprise</h3><p>Full pipeline, all categories.</p>
+      <div class="price">$150</div>
+      <ul><li>591 workflows</li><li>All node types</li><li>ExecuteCommand + Cron + Forms</li></ul>
+      <a href="https://www.paypal.com/ncp/payment/GKDCLF7CVB8KW" class="buy-btn">Buy Now</a>
+    </div>
+  </div>
+  <div style="text-align:center;margin-top:20px">
+    <a href="https://github.com/antoniojmh/forge-workflow-packs" style="color:#ff6600">View on GitHub →</a>
+    <span style="color:#333;margin:0 10px">|</span>
+    <a href="https://github.com/antoniojmh/forge-workflow-packs/tree/main/freebie" style="color:#ff6600">Free template →</a>
+  </div>
+</section>
+
+<section>
+  <h2 class="section-title">🛠️ More Services</h2>
+  <p class="section-sub">Custom solutions for your tech needs.</p>
+  <div class="other-services">
+    <a href="https://www.paypal.com/donate/?hosted_button_id=WL7F42PXFDAZN" class="other-card">
+      <div class="icon">📊</div><h4>Server Monitoring</h4>
+      <p>24/7 uptime & performance monitoring</p>
+      <div class="amount">$15<small style="font-size:13px;color:#888">/mo</small></div>
+    </a>
+    <a href="https://www.paypal.com/donate/?hosted_button_id=WL7F42PXFDAZN" class="other-card">
+      <div class="icon">🌐</div><h4>LandingExpress</h4>
+      <p>Professional website in 24h. Domain + hosting.</p>
+      <div class="amount">$49</div>
+    </a>
+    <a href="mailto:atlashorizon0@gmail.com" class="other-card">
+      <div class="icon">🔧</div><h4>Consulting</h4>
+      <p>n8n, Docker, servers, automation</p>
+      <div class="amount">$50<small style="font-size:13px;color:#888">/hr</small></div>
+    </a>
+    <a href="mailto:atlashorizon0@gmail.com" class="other-card">
+      <div class="icon">🤖</div><h4>Custom Bots</h4>
+      <p>WhatsApp, Telegram, Discord bots</p>
+      <div class="amount">From $100</div>
+    </a>
+  </div>
+</section>
+
+<section>
+  <div class="payment-bar">
+    <h3>💳 Payment Methods</h3>
+    <div class="payment-grid">
+      <div class="pay-method"><b>🅿️ PayPal</b><span>Cards accepted</span></div>
+      <div class="pay-method"><b>🪙 Crypto</b><span>0x15BbAEA9Ca9A28711E38ba2c4e89E6A58050d3D4</span></div>
+      <div class="pay-method"><b>🏦 Industrial</b><span>7175763478</span></div>
+      <div class="pay-method"><b>🏦 Banrural</b><span>4052264118</span></div>
+      <div class="pay-method"><b>📧 Contact</b><span>atlashorizon0@gmail.com</span></div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>⚒️🔥 <b>Forge Services</b> — Built on TITAN Homelab, Guatemala</p>
+  <p style="margin-top:6px">
+    <a href="https://early-putting-redhead-roller.trycloudflare.com">Landing</a> ·
+    <a href="https://github.com/antoniojmh/forge-workflow-packs">GitHub</a> ·
+    <a href="https://www.paypal.com/donate/?hosted_button_id=WL7F42PXFDAZN">☕ Donate</a>
+  </p>
+</footer>
+</body></html>
